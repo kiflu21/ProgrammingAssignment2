@@ -43,3 +43,13 @@ cacheSolve <- function(x, ...) {
   
   inv
 }
+
+
+#my sample test
+mytest <- matrix(runif(4,1,10),2,2)  # a 2 by 2 square matrix
+print(mytest)
+
+mytestCached <- makeCacheMatrix(mytest)
+
+mytestInv <- cacheSolve(mytestCached)  #invese matrix calculatedusing cacheSolve function
+print(mytestInv)
